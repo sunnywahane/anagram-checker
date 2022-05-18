@@ -9,6 +9,7 @@
     ".projen/deps.json",
     ".projen/files.json",
     ".projen/tasks.json",
+    "anagram-checker/anagram-checker.gradle",
     "build.gradle",
     "detekt.yml",
     "settings.gradle"
