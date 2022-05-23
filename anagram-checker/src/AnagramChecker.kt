@@ -3,8 +3,8 @@ class AnagramChecker {
         val counter = IntArray(26) { 0 }
         if (word1.length != word2.length) return false
         (word1.indices).forEach { index ->
-            ++counter[word1[index] - 'a']
-            --counter[word2[index] - 'a']
+            ++counter[word1[index].lowercaseChar() - 'a']
+            --counter[word2[index].lowercaseChar()- 'a']
         }
         return !counter.any { it != 0 }
     }
